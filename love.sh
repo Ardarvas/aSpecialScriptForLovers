@@ -1,9 +1,6 @@
 #!/bin/bash
-
+BLUE='\033[0;34m'
 echo "Do you want to delete all memories about her?"
-
-
-
 letters=("y" "e" "s")
 answer=""
 
@@ -16,17 +13,29 @@ for i in {0..2}; do
 done
 echo -e "\n"
 
-
 if [ "$answer" == "yes" ]; then
-    echo "processing....
+
+    sleep 1
+echo -e "\033[0;32mWarning: Critical emotional core destabilizing\033[0m"
+echo -e "\033[0;32m  Warning: Critical emotional core destabilizing\033[0m"
+echo -e "\033[0;32m   Warning: Critical emotional core destabilizing\033[0m"
+echo -e "\033[0;32m    Warning: Critical emotional core destabilizing\033[0m"
+echo -e "\033[0;32m     Warning: Critical emotional core destabilizing\033[0m"
+echo -e "\033[0;32m      Warning: Critical emotional core destabilizing\033[0m"
+echo -e "\033[0;32m       Warning: Critical emotional core destabilizing\033[0m"
+sleep 2
+          
+    echo "
+    Processing....
     .
     
-    memories are in the process of being decomposed.
+    Memories are in the process of being decomposed.
     .
     ..
     .."
+    
     sleep 2
-    echo "the memories you feel lov
+    echo "The memories you feel lov
     e
     d..
     l
@@ -35,6 +44,10 @@ if [ "$answer" == "yes" ]; then
     
     .
     . 
+    ..
+    LOVED...
+    ...
+    .......
     ...
     .."
     sleep 3
@@ -59,7 +72,7 @@ if [ "$answer" == "yes" ]; then
     ......................GONE
 "
     
- 
+
     total_steps=15
     for ((i=0; i<=total_steps; i++)); do
        
@@ -107,7 +120,7 @@ if [ "$answer" == "yes" ]; then
     fail
     process killed.\n"
     sleep 3
- 
+  
     echo -e "\033[0;31mYOU
     NEVER
     CAN
@@ -130,7 +143,27 @@ if [ "$answer" == "yes" ]; then
     NEVE.........
     R..........."
     
+     sleep 3 
+     #######################################################################################################################################################3 
+GREEN='\033[0;32m'	
+NC='\033[0m'
+print_green() {
+    echo -e "${GREEN}$1${NC}"
+}
+error_message="youaredyinginsideyouaredyinginsideyouaredyinginsideyouaredyinginsideyouaredyinginsideyouaredyinginsideyouaredyinginsideyouaredyinginsideyouaredyinginside
+youaredyinginsideyouaredyinginsideyouaredyinginsideyouaredyinginsideyouaredyinginsideyouaredyinginsideyouaredyinginsideyouaredyinginsideyouaredyinginside
+youaredyinginsideyouaredyinginside
+youaredyinginsideyouaredyinginside
+youaredyinginsideyouaredyinginside
+youaredyinginsideyouaredyinginsideyouaredyinginside
+youaredyinginsideyouaredyinginsideyouaredyinginsideyouaredyinginsideyouaredyinginsideyouaredyinginsideyouaredyinginsideyouaredyinginsideyouaredyinginside
+youaredyinginsideyouaredyinginsideyouaredyinginsideyouaredyinginsideyouaredyinginsideyouaredyinginsideyouaredyinginsideyouaredyinginsideyouaredyinginside"
+print_green "$error_message"
 
-else
+ ###############################################################
+
+elif [ "$answer" == "no" ]; then
     echo "Process cancelled."
+else
+    echo "Please answer 'yes' or 'no'."
 fi
